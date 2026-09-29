@@ -1,0 +1,152 @@
+# Cards are grouped on the timeline by `year`, in the order listed here.
+# `year_label` overrides the year shown on the card (e.g. a date range).
+# `collaborators` lists who you worked with; each needs a `name`, a `github` username, or both:
+#   collaborators:
+#     - name: Jane Doe
+#       github: janedoe
+
+- title: JEPA Project
+  year: 2026
+  tech: [Python, GDScript]
+  description: >-
+    Read the seminal papers on energy-based models and JEPA, implemented them in PyTorch,
+    and built a Godot 4 visualizer of the learned world model.
+  links:
+    - label: JEPAimplementation
+      url: https://github.com/InfiniteInbox/JEPAimplementation
+    - label: i-jepa-sim
+      url: https://github.com/InfiniteInbox/i-jepa-sim
+  pictures:
+    - src: /assets/images/jepa/data-generator.png
+      alt: Godot data and scene generator, with sliders for velocity, radius, hold, bounce and friction ranges
+    - src: /assets/images/jepa/model-visualizer.png
+      alt: Godot model visualizer comparing the ball's real path with the model's imagined path, plus surprise and contraction charts
+  details_title: Papers & Texts Read
+  details: |
+    #### Yann LeCun / JEPA family
+
+    **LeCun, Y.** (2022). *A Path Towards Autonomous Machine Intelligence* (Version 0.9.2) \[Position paper\]. OpenReview. [https://openreview.net/forum?id=BZ5a1r-kVsf](https://openreview.net/forum?id=BZ5a1r-kVsf)
+
+    **LeCun, Y., Chopra, S., Hadsell, R., Ranzato, M., & Huang, F. J.** (2006). A tutorial on energy-based learning. In G. Bakir, T. Hofmann, B. Schölkopf, A. Smola, & B. Taskar (Eds.), *Predicting Structured Data*. MIT Press. [http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf](http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)
+
+    **Assran, M., Duval, Q., Misra, I., Bojanowski, P., Vincent, P., Rabbat, M., LeCun, Y., & Ballas, N.** (2023). Self-supervised learning from images with a joint-embedding predictive architecture (I-JEPA). *CVPR 2023*. arXiv:2301.08243. [https://arxiv.org/abs/2301.08243](https://arxiv.org/abs/2301.08243)
+
+    **Bardes, A., Garrido, Q., Ponce, J., Chen, X., Rabbat, M., LeCun, Y., Assran, M., & Ballas, N.** (2024). Revisiting feature prediction for learning visual representations from video (V-JEPA). *Transactions on Machine Learning Research*. arXiv:2404.08471. [https://arxiv.org/abs/2404.08471](https://arxiv.org/abs/2404.08471)
+
+    **Assran, M., Bardes, A., Fan, D., Garrido, Q., et al. (incl. LeCun, Y.)** (2025). V-JEPA 2: Self-supervised video models enable understanding, prediction and planning. arXiv:2506.09985. [https://arxiv.org/abs/2506.09985](https://arxiv.org/abs/2506.09985)
+
+    **Maes, L., Le Lidec, Q., Scieur, D., LeCun, Y., & Balestriero, R.** (2026). LeWorldModel: Stable end-to-end joint-embedding predictive architecture from pixels. arXiv:2603.19312. [https://arxiv.org/abs/2603.19312](https://arxiv.org/abs/2603.19312)
+
+    **Balestriero, R., & LeCun, Y.** (2025). LeJEPA: Provable and scalable self-supervised learning without the heuristics. arXiv:2511.08544. [https://arxiv.org/abs/2511.08544](https://arxiv.org/abs/2511.08544)
+
+    #### Physics
+
+    **Feynman, R. P., Leighton, R. B., & Sands, M.** (1964). *The Feynman Lectures on Physics, Vol. II*, Chapter 19: The Principle of Least Action. Addison-Wesley. [https://www.feynmanlectures.caltech.edu/II_19.html](https://www.feynmanlectures.caltech.edu/II_19.html)
+
+    #### Mathematics (Optimal Transport)
+
+    **Ambrosio, L.** (2003). Lecture notes on optimal transport problems (§1.1, The Monge–Kantorovich optimal transport problem). In *Mathematical Aspects of Evolving Interfaces*, Lecture Notes in Mathematics, Vol. 1812 (pp. 1–52). Springer. (CIME course, Madeira, 2000.) [http://cvgmt.sns.it/paper/1116/](http://cvgmt.sns.it/paper/1116/)
+
+- title: Toronto Climate Viz (with Toronto Climate Observatory)
+  year: 2026
+  tech: [Svelte, JavaScript]
+  description: >-
+    A Svelte scrollytelling visualization of the climate data our team curated over the
+    past year.
+  links:
+    - label: DataVizTCO
+      url: https://github.com/InfiniteInbox/DataVizTCO
+
+- title: Ontario Flood History (Research with Toronto Climate Observatory)
+  year: 2026
+  year_label: 2025–26
+  wide: true
+  private: true
+  tech: [Python, PyTorch, NumPy]
+  description: >-
+    Ontario's official flood record misses many events. We combine it with precipitation,
+    streamflow and newspaper archives, and use positive-unlabeled learning to find
+    unrecorded floods and test whether rural and lower-income areas are underreported.
+  collaborators:
+    - name: Dylan Van Bramer
+      github: dylancvb
+    - name: Ayusha Thapa
+    - name: Hugo Fuhrer
+      github: hugofuhrer
+  pictures:
+    - src: /assets/images/flood/data-availability.png
+      alt: Heatmaps of precipitation stations, streamflow stations, newspaper flood reports and disaster database flood events across Ontario, 1800 to 2025
+    - src: /assets/images/flood/precip-streamflow.png
+      alt: Precipitation and streamflow in Northern Lake Erie for 15 days before and after the flood on 2020-01-12
+    - src: /assets/images/flood/watersheds.png
+      alt: Ontario's 3 primary and 35 secondary watershed boundaries
+    - src: /assets/images/flood/events-by-month.png
+      alt: Flood events by month in the CDD, Conservation Ontario, NRCan and OEM records
+
+- title: CSC209 Final Project 
+  year: 2026
+  tech: [C, Linux Kernel]
+  description: >-
+    A Unix shell in C with basic file operations, multiple processes and diagnostic
+    messages.
+  collaborators:
+    - name: Georgia Kriebel
+      github: kriebelg
+  links:
+    - label: Video Demo
+      url: https://www.youtube.com/watch?v=JxXjpPbL6V4
+
+- title: Moonshot
+  year: 2025
+  tech: [Python]
+  description: >-
+    A strike-zone heatmap of pitches and swings, built for CSC207 and pitched (no pun
+    intended) to Trajekt Sports.
+  collaborators:
+    - name: Pranay Chopra
+      github: choprapranay
+    - name: Sumedh Gadepalli
+      github: sumedh71
+    - name: Sambhav Athreya
+      github: SambhavAthreyaGit
+    - name: Jeff Lu
+      github: Jeff15321
+  links:
+    - label: moonshot
+      url: https://github.com/choprapranay/moonshot
+
+- title: Mount Washington Internship 
+  year: 2024
+  tech: [Python, PyTorch, NumPy]
+  description: >-
+    Forecast weather at different elevations with DNNs, LSTMs and Transformers during an
+    internship at Mount Washington.
+  links:
+    - label: Link
+      url: "https://github.com/InfiniteInbox/MountWashington2024"
+    - label: Final Presentation
+      url: https://docs.google.com/presentation/d/1BncJzEg1xdYlNlhzmD0pvT_ZZzs_ASEHrWnEQ1D8l6A/edit?slide=id.g2e06ec142e8_0_21#slide=id.g2e06ec142e8_0_21
+
+- title: Math of ML
+  year: 2023
+  tech: [Python]
+  description: >-
+    A from-scratch Python linear algebra library, from row reduction and determinants up
+    to QR, eigendecomposition and SVD, with the math and time complexity documented for
+    every function.
+  collaborators:
+    - name: Imran Iftikar
+      github: iai9
+  links:
+    - label: Link
+      url: "https://github.com/iai9/intersession_ml_math"
+
+- title: TESS Exoplanet
+  year: 2023
+  tech: [Python]
+  description: >-
+    An ML model that predicts a star's exoplanet transits, built at a Carnegie Mellon
+    summer program and later verified at the Allegheny Observatory.
+  collaborators:
+    - name: Vincent Niedermayer
+      github: vnieder

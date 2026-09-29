@@ -1,0 +1,44 @@
+# `animation` is a file in _includes/. Pictures without a `src` show as placeholder boxes.
+
+- title: HVAC Heat Recovery
+  description: >-
+    Our HVAC condenser dumps heat outside while cooling the house, at the same time as a
+    natural gas heater burns energy to heat the pool, and in the Northeast the pool cools
+    down quickly once the sun sets. I reclaimed that waste heat using titanium heat
+    exchangers from heat pump pool heaters, which can handle both the refrigerant and
+    chlorinated pool water, split into two zones that valve actuators control
+    independently. I designed the full scope, coordinated the contractors for the
+    plumbing, condenser modifications and wiring, and replaced the pool controller with a
+    custom Siemens LOGO PLC that I built and programmed in LOGO Soft. A locally hosted,
+    mobile-friendly web interface controls the pump, spa, lights and heater, runs a weekly
+    pump schedule, and shows the active heat recovery zone in real time. Since it runs
+    every day, the program also guards against the refrigerant overheating to protect the
+    HVAC system.
+  animation: animations/hvac-heat-recovery.svg
+  pictures:
+    - src: /assets/images/hvac/condenser-and-heater.jpg
+      alt: The HVAC condenser that generates heat while cooling the house, next to the natural gas pool heater
+    - src: /assets/images/hvac/heat-exchangers.jpg
+      alt: Two titanium heat exchangers plumbed into the pool lines, with valve actuators controlling each zone
+    - src: /assets/images/hvac/plc-controller.jpg
+      alt: The custom Siemens PLC pool controller, with low-voltage relays for the valves and high-voltage relays for pumps and lights
+
+- title: Automating Starter Fuel
+  description: >-
+    Our home's backup generator is over 20 years old and would not reliably start without
+    a spurt of starter fluid, especially in cold winter weather. That meant walking out in
+    bad weather and losing automatic startup during outages. I built a device from an
+    Arduino, a trigger sprayer, a servo motor and automotive relays. When an outage makes
+    the engine crank, a relay on the starter motor wire signals the Arduino, which drives
+    the servo to pull the sprayer's trigger and spray a small amount of fluid straight into
+    the carburetor. The code waits at least 5 minutes between sprays so it can never
+    over-spray. The only upkeep is replacing the spray can once a year, and it has started
+    the generator reliably for over 3 years.
+  animation: animations/starter-fuel.svg
+  pictures:
+    - src: /assets/images/starter-fuel/old-generator.jpg
+      alt: The 20-year-old backup generator, with the can of starter fluid it needed to start
+    - src: /assets/images/starter-fuel/automated-spray.jpg
+      alt: The generator with the servo-driven spray mechanism and the Arduino housing installed
+    - src: /assets/images/starter-fuel/carburetor-spray.jpg
+      alt: The starter fluid sprayer aimed directly into the carburetor

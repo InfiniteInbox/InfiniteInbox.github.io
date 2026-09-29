@@ -1,0 +1,10 @@
+{% for project in include.projects %}
+<article class="eng-project">
+<h2>{{ project.title }}</h2>
+<div class="eng-project__desc">{{ project.description | markdownify }}</div>
+<div class="eng-project__body">
+<div class="animation-block">{% include {{ project.animation }} %}</div>
+<div class="eng-project__pics">{% for picture in project.pictures %}{% include project-picture.html picture=picture %}{% endfor %}</div>
+</div>
+</article>
+{% endfor %}

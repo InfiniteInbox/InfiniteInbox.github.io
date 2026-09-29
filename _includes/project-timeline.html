@@ -1,0 +1,28 @@
+{% assign years = include.projects | group_by: "year" %}
+<div class="timeline">
+{% for year in years %}
+<div class="timeline__year">
+<div class="timeline__label">{{ year.name }}</div>
+<div class="project-grid">
+{% for project in year.items %}
+<article class="project-card{% if project.wide %} project-card--wide{% endif %}">
+<div class="project-card__top">
+<h3>{{ project.title }}</h3>
+<span class="project-card__year">{{ project.year_label | default: project.year }}</span>
+</div>
+<div class="project-card__desc">{{ project.description | markdownify }}</div>
+{% if project.collaborators %}<p class="project-card__with">With {% for person in project.collaborators %}{% if person.github %}<a href="https://github.com/{{ person.github }}">{{ person.name | default: person.github }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+{% if project.tech %}<ul class="tags">{% for tech in project.tech %}<li>{{ tech }}</li>{% endfor %}</ul>{% endif %}
+{% if project.pictures %}<div class="project-card__pics">{% for picture in project.pictures %}{% include project-picture.html picture=picture %}{% endfor %}</div>{% endif %}
+{% if project.private %}<span class="badge-private">Private</span>
+{% elsif project.links %}<ul class="project-links">{% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}</ul>{% endif %}
+{% if project.details %}<details>
+<summary>{{ project.details_title | default: "More" }}</summary>
+<div class="project-card__details">{{ project.details | markdownify }}</div>
+</details>{% endif %}
+</article>
+{% endfor %}
+</div>
+</div>
+{% endfor %}
+</div>

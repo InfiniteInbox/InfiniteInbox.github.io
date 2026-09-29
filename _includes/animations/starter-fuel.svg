@@ -1,0 +1,32 @@
+<svg class="diagram" viewBox="0 0 640 340" role="img" aria-labelledby="starter-title">
+  <title id="starter-title">An Arduino drives a servo that pulls the trigger on a can of starter fluid, spraying it into the carburetor</title>
+
+  <rect x="30" y="200" width="200" height="110" rx="10" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/>
+  <text x="130" y="262">Engine</text>
+
+  <rect x="85" y="130" width="90" height="70" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <path d="M175 128 h26 v28 h-26" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="130" y="120">Carburetor</text>
+
+  <g class="sf-spray">
+    <path class="flow flow--spray" d="M426 138 C 360 100, 260 100, 204 142"/>
+  </g>
+
+  <rect x="420" y="150" width="70" height="150" rx="10" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+  <text x="455" y="220">Starter</text>
+  <text x="455" y="238">fluid</text>
+  <g class="sf-cap">
+    <rect x="440" y="128" width="30" height="22" rx="3" fill="#f9a8d4" stroke="#db2777" stroke-width="2"/>
+    <rect x="428" y="134" width="12" height="8" fill="#db2777"/>
+  </g>
+
+  <rect x="500" y="90" width="80" height="40" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="545" y="115">Servo</text>
+  <line class="sf-arm" x1="505" y1="110" x2="452" y2="124" stroke="#059669" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="505" cy="110" r="6" fill="#059669"/>
+
+  <path class="flow flow--signal" d="M555 240 V132"/>
+
+  <rect x="500" y="240" width="110" height="60" rx="6" fill="#e0f2f1" stroke="#00979d" stroke-width="2"/>
+  <text x="555" y="275">Arduino</text>
+</svg>

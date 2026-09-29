@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 340" role="img" aria-labelledby="hvac-title">
+  <title id="hvac-title">Hot condenser gas from the HVAC unit heats cold pool water in a titanium heat exchanger, and warm water returns to the pool</title>
+  <defs>
+    <marker id="hvac-arrow-cold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#3b82f6"/></marker>
+    <marker id="hvac-arrow-hot" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ef4444"/></marker>
+    <marker id="hvac-arrow-warm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f97316"/></marker>
+    <marker id="hvac-arrow-cool" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8b5cf6"/></marker>
+  </defs>
+
+  <path class="flow flow--warm" d="M410 90 H610 V22 H85 V40" marker-end="url(#hvac-arrow-warm)"/>
+  <text x="510" y="80">Warm pool water</text>
+
+  <rect x="20" y="40" width="130" height="60" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M32 78 q12 -10 24 0 t24 0 t24 0 t24 0 t24 0" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="85" y="64">Pool</text>
+
+  <path class="flow flow--cold" d="M150 60 H296" marker-end="url(#hvac-arrow-cold)"/>
+  <text x="225" y="50">Cold pool water</text>
+
+  <rect x="20" y="180" width="160" height="110" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="100" y="204">HVAC condenser</text>
+  <path d="M40 245 l12 -20 l12 40 l12 -40 l12 40 l12 -40 l12 40 l12 -40 l12 40 l12 -40 l12 20" fill="none" stroke="#ef4444" stroke-width="2"/>
+
+  <path class="flow flow--hot" d="M180 205 H296" marker-end="url(#hvac-arrow-hot)"/>
+  <text x="232" y="192">Hot condenser gas</text>
+
+  <path class="flow flow--cool" d="M355 240 V312 H100 V294" marker-end="url(#hvac-arrow-cool)"/>
+  <text x="228" y="332">Cooled refrigerant</text>
+
+  <rect x="300" y="40" width="110" height="200" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="355" y="100">Titanium</text>
+  <text x="355" y="118">heat</text>
+  <text x="355" y="136">exchanger</text>
+  <path class="diagram__plates" d="M315 180 l10 -14 l10 28 l10 -28 l10 28 l10 -28 l10 28 l10 -28 l10 14" fill="none" stroke="#64748b" stroke-width="2"/>
+</svg>

@@ -1,0 +1,1 @@
+{% if include.picture.src %}<a class="project-pic-link" href="{{ include.picture.src | relative_url }}"><img class="project-pic" src="{{ include.picture.src | relative_url }}" alt="{{ include.picture.alt }}" loading="lazy"></a>{% else %}<div class="project-pic project-pic--placeholder">{{ include.picture.alt }}</div>{% endif %}

@@ -1,3 +1,11 @@
 theme: jekyll-theme-minimal
 title: Yash Jain's Homepage 
 description: Bookmark!
+
+# Setting `exclude` replaces Jekyll's default list, so the defaults are repeated here.
+exclude:
+  - "Note May 25, 2026.pdf"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
