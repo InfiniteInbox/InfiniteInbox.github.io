@@ -13,6 +13,7 @@ I am a 3rd year Undergraduate at the University of Toronto studying Computer Sci
 
 - [Computer Science Projects](/csprojects/)
 - [Engineering Projects](/engprojects/)
+- [GitHub Profile](https://github.com/InfiniteInbox)
 
 <div class="photo-grid">
   <figure>
