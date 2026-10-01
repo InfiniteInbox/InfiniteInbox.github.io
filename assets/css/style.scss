@@ -328,12 +328,6 @@ $block-border: #c4b5fd;
   40%, 62% { opacity: 1; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .diagram * {
-    animation: none !important;
-  }
-}
-
 @media (max-width: 640px) {
   .timeline__year {
     grid-template-columns: 50px 1fr;
